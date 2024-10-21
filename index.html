@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<form action="" method="post" novalidate>
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail">
+    <span class="error" id="email-error" aria-live="polite"></span>
+    <label for="country">Country</label>
+    <input type="text" name="country" id="country" pattern="[a-zA-Z]*">
+    <span class="error" id="country-error" aria-live="polite"></span>
+    <label for="zip">Zip Code</label>
+    <input type="text" name="zip" id="zip" pattern="(\d{5}([\-]\d{4})?)">
+    <span class="error" id="zc-error" aria-live="polite"></span>
+    <label for="pw">Password</label>
+    <input type="password" name="password" id="pw">
+    <label for="pw-confirm">Confirm Password</label>
+    <input type="password" name="password" id="pw-confirm">
+    <span class="error" id="password-error" aria-live="polite"></span>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
